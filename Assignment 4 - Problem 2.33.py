@@ -14,6 +14,5 @@ p = np.pi
 K_I = 2*S_y*np.sqrt(a/p)
 
 plt.plot(a,K_I)
-#plt.plot(a,K_IC)
 plt.grid()
 plt.show()
