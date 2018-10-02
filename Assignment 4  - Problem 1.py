@@ -1,4 +1,5 @@
-"""Assignment 4 Problem 1"""
+"""Assignment 4 Problem 2.34"""
+print("Assignment 4 Problem 2.34")
 """Centrally cracked strip - Determining Max loading"""
 """Process - Find Sigma_max and use that to find force"""
 
