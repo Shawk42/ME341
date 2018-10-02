@@ -30,8 +30,8 @@ sigma = (K_IC/(alpha*fab))*(10**6)                #calculating sigma max
 Area = Length*thick        #Total area of edge
 F_max = Area*sigma         #Max allowable force
 
-print("Max force =",F_max,"Newtons")
-print("Max force =",F_max/1000,"kN")
+#print("Max force =",F_max,"Newtons")
+#print("Max force =",F_max/1000,"kN")
 """Max force is 35278 N"""
 
 plt.plot(Crack,F_max)
