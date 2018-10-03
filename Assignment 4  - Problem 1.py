@@ -8,9 +8,9 @@ import matplotlib.pyplot as plt #Allows for plotting
 
 """Givens"""
 Length = .02     #overall length of the strip
-#Crack = .002     #length of crack
-Crack = np.linspace(.0001,.01905,num=100)    #range of crack sizes up to 80% length
-print(Crack)
+Crack = .002     #length of crack
+#Crack = np.linspace(.0001,.01905,num=100)    #range of crack sizes up to 80% length
+#print(Crack)
 thick = .002     #thickness of piece
 K_IC = 50        #K_IC of material [MPa sqrt(m)]
 
@@ -31,13 +31,13 @@ sigma = (K_IC/(alpha*fab))*(10**6)                #calculating sigma max
 Area = Length*thick        #Total area of edge
 F_max = Area*sigma         #Max allowable force
 
-#print("Max force =",F_max,"Newtons")
-#print("Max force =",F_max/1000,"kN")
+print("Max force =",F_max,"Newtons")
+print("Max force =",F_max/1000,"kN")
 """Max force is 35278 N"""
 
-plt.plot(Crack,F_max)
-plt.plot(.002,35278,'*')
-plt.grid()
-plt.xlabel("Crack Length (m)")
-plt.ylabel("Max force")
-plt.show()
+#plt.plot(Crack,F_max)
+#plt.plot(.002,35278,'*')
+#plt.grid()
+#plt.xlabel("Crack Length (m)")
+#plt.ylabel("Max force")
+#plt.show()
