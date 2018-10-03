@@ -13,6 +13,11 @@ a = np.linspace(0,length,num=50)  #varying crack length
 p = np.pi
 K_I = 2*S_y*np.sqrt(a/p)
 
+lmao = np.linspace(77,77,50)
+
 plt.plot(a,K_I)
+plt.plot(a,lmao)
+plt.xlabel("Crack Length")
+plt.ylabel("K_IC")
 plt.grid()
 plt.show()
