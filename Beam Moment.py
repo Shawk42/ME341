@@ -15,13 +15,16 @@ sections = 2   #How many different bending moments are expected
 
 """Intermediate Caclulations"""
 zeta = int(num/sections)
-orient_1 = np.full((1,zeta),1)
-orient_2 = np.full((1,zeta),-1)
-orient = np.stack((orient_1,orient_2),axis = 0)
-x = np.linspace(0,x,num)
+orient_1 = np.full((1,zeta),-1)
+orient_2 = np.full((1,zeta),1)
+orient = np.append(orient_1,orient_2)
+dist = np.linspace(0,x,num)
 
-#moment = F*np.multiply(x,orient)
+moment = F*np.multiply(dist,orient)
 
-#print(moment)
-#print(x)
-print(orient)
+print(moment)
+
+"Plotting"
+plt.plot(dist,moment)
+plt.show()
+
