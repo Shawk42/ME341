@@ -20,9 +20,9 @@ orient_2 = np.full((1,zeta),1)
 orient = np.append(orient_1,orient_2)
 dist = np.linspace(0,x,num)
 
-moment = F*np.multiply(dist,orient)
+moment_raw = F*np.multiply(dist,orient)
 
-print(moment)
+moment = np.abs(moment_raw)
 
 "Plotting"
 plt.plot(dist,moment)
