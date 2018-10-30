@@ -2,6 +2,7 @@
 print("Assignment 7 - Problem 4.16")
 
 import numpy as np
+import matplotlib.pyplot as plt
 
 "GIVENS"
 #[Section 1 , Section 2] {around O prim}
@@ -21,3 +22,6 @@ centroid_y = (area_sum*cen_y_sum)/area_sum        #Finding the centroid in the y
 """PRINTING"""
 print("X location centroid",centroid_x)
 print("Y location centroid",centroid_y)
+
+"""PLOTTING"""
+ 
