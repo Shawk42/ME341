@@ -18,4 +18,6 @@ cen_y_sum = np.sum(cen_y)                     #Summing the local centroids
 centroid_x = (area_sum*cen_x_sum)/area_sum        #Finding the centroid in the x direction
 centroid_y = (area_sum*cen_y_sum)/area_sum        #Finding the centroid in the y direction
 
-""
+"""PRINTING"""
+print("X location centroid",centroid_x)
+print("Y location centroid",centroid_y)
