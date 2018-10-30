@@ -1,5 +1,6 @@
 '''Assignment 7 - Problem 4.5'''
 print("Assignment 7 - Problem 4.5")
+print(" "*50)
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -22,10 +23,27 @@ zero = np.zeros(n)
 """Stress caclulations"""
 sigma_zz = ((-M_y/I_y)*x)+((M_x/I_x)*y)
 
+"MAX VALUE EXTRACTION"
+sigma_max = np.amax(sigma_zz)                    #Max Stress value
+sig_max_index = list(sigma_zz).index(sigma_max)  #At what point in the array is the stress maximized
 
-"""Graphing"""
-plt.plot(x,sigma_zz)
-plt.plot(y,sigma_zz)
-plt.plot(x,zero)
-plt.plot(zero,y)
-plt.show()
+x_pos = x.item(sig_max_index)
+y_pos = y.item(sig_max_index)
+
+"""ANSWER VALIDATION"""
+if x_pos > 59.5-15.6:
+    print("X position is INVALID",x_pos)
+else:
+    print("X position is valid")
+if y_pos > 203/2:
+    print("Y position is INVALID",x_pos)
+else:
+    print("Y position is valid")
+
+
+"""PRINTING"""
+print(""*50)
+print("RESULTS")
+print("-"*50)
+print("The max stress is",sigma_max,"[MPa]")
+print("The max stress occurs at (x,y)",x_pos,",",y_pos,"[mm]")
