@@ -45,7 +45,7 @@ I_x = Ix_1+Ix_2        #Total MOI in the x direction
 I_y = Iy_1+Iy_2        #Total MOI in the y direction
 
 """PRINTING"""
-print("X location centroid",centroid_x)
-print("Y location centroid",centroid_y)
+print("X location centroid",centroid_x,"[mm]")
+print("Y location centroid",centroid_y,"[mm]")
 print("MOI_x",int(I_x),"[mm^4]")
 print("MOI_y",int(I_y),"[mm^4]")
