@@ -18,8 +18,8 @@ M = 500  #Moment                               [N-m]
 #Max stress
 My = np.sin(theta)*M
 Mx = np.cos(theta)*M
-Iy = ((b**3)*h)/2
-Ix = (b*(h**3))/2
+Ix = ((b**3)*h)/12
+Iy = (b*(h**3))/12
 x = np.linspace(0,b/2,num=100)
 y = np.linspace(0,h/2,num=100)
 sigma_zz = ((-My/Iy)*x)+((Mx/Ix)*y)
@@ -35,8 +35,14 @@ si = np.degrees(si_rad)
 
 
 """PRINTING"""
-print("Max stress is ",sigma_zz_max,"[Pa]")
+print("Max stress is ",sigma_zz_max*(10**-6),"[MPa]")
 print("The neutral axis is at",si,"[degrees]")
+print("M_x",Mx)
+print("M_y",My)
+print("Ix",Ix)
+print("Iy",Iy)
+print("base",b)
+print("height",h)
 
 """Plotting"""
 plt.plot(x,y_loc)
