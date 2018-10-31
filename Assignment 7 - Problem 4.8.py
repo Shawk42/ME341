@@ -41,7 +41,7 @@ print("RESULTS")
 print("-"*50)
 print("The max moment is",M_max,"[N-m]")
 print("The max moment occurs at",M_pos,"[m]")
-print("The max bending stress is",sigma_max,"[Pa]")
+print("The max bending stress is",int(sigma_max),"[Pa]")
 print("The max bending stress occurs at (x,y)",x_pos,",",y_pos,"[m]")
 
 """PLOTTING"""
