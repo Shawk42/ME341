@@ -1,4 +1,4 @@
-# ME341
+# ME341 - Intermediate Mechanics of Materials
 All the homeworks problems since assignment 4 that I have completed in Python.
 
 Assignment 5 through 7 - Did not use python
