@@ -6,3 +6,5 @@ Assignment 5 through 7 - Did not use python
 Spring Code - Exploration of lecture concepts
 
 Beam Moment - Finding the max moment along a beam 
+
+Class has concluded
